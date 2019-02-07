@@ -17,6 +17,14 @@ public class Main {
             System.out.println("seat is taken");
         }
 
+        League<Team<FootballPlayer>> NFL = new League<>("National Football League");
+        Team<FootballPlayer> bucs = new Team<>("Buccaneers");
+        Team<FootballPlayer> saints = new Team<>("Saints");
+
+        NFL.add(bucs);
+        NFL.add(saints);
+
+
 
 
         //adeladeCrows.matchResult(tbRays, 1,1);
