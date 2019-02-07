@@ -23,12 +23,36 @@ public class Main {
 
         NFL.add(bucs);
         NFL.add(saints);
-
-
-
-
         //adeladeCrows.matchResult(tbRays, 1,1);
 
+        int x = 98;
+        int y = 0;
+
+        System.out.println(dividedLBYL(x,y));
+        System.out.println(divideEAFP(x,y));
+
+    }
+
+    private static int dividedLBYL(int x, int y)
+    {
+        if(y !=0)
+        {
+            return x/y;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    private static int divideEAFP(int x, int y)
+    {
+        try
+        {
+            return x/y;
+        }catch (ArithmeticException e)
+        {
+            return 0;
+        }
     }
 
 }
