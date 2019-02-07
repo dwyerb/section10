@@ -1,28 +1,28 @@
 package com.digitalglobe;
 
 import java.util.ArrayList;
-
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
 
-        Theater theater = new Theater("Tampa Theater",8,12);
-        theater.getSeats();
-        if(theater.reserveSeat("H11"))
-        {
-            System.out.println("please pay");
-        }
-        else
-        {
-            System.out.println("seat is taken");
-        }
-
-        League<Team<FootballPlayer>> NFL = new League<>("National Football League");
-        Team<FootballPlayer> bucs = new Team<>("Buccaneers");
-        Team<FootballPlayer> saints = new Team<>("Saints");
-
-        NFL.add(bucs);
-        NFL.add(saints);
+//        Theater theater = new Theater("Tampa Theater",8,12);
+//        theater.getSeats();
+//        if(theater.reserveSeat("H11"))
+//        {
+//            System.out.println("please pay");
+//        }
+//        else
+//        {
+//            System.out.println("seat is taken");
+//        }
+//
+//        League<Team<FootballPlayer>> NFL = new League<>("National Football League");
+//        Team<FootballPlayer> bucs = new Team<>("Buccaneers");
+//        Team<FootballPlayer> saints = new Team<>("Saints");
+//
+//        NFL.add(bucs);
+//        NFL.add(saints);
         //adeladeCrows.matchResult(tbRays, 1,1);
 
         int x = 98;
@@ -30,6 +30,8 @@ public class Main {
 
         System.out.println(dividedLBYL(x,y));
         System.out.println(divideEAFP(x,y));
+        int p = getInt();
+        System.out.println("x is " + p);
 
     }
 
@@ -53,6 +55,11 @@ public class Main {
         {
             return 0;
         }
+    }
+    private static int getInt()
+    {
+        Scanner s = new Scanner(System.in);
+        return s.nextInt();
     }
 
 }
